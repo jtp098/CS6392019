@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="Welcome to my Menu Items App"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnSms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="SMS" />
+
+            <Button
+                android:id="@+id/btnPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnSms"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Phone" />
+
+            <Button
+                android:id="@+id/btnWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnPhone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Web" />
+
+            <Button
+                android:id="@+id/btnMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnWeb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Map" />
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnMap"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Share" />
+
+            <Button
+                android:id="@+id/btnNewActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnShare"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="New Activity" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
