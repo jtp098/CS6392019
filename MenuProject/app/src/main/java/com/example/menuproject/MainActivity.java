@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(help);
                 return true;
             case R.id.action_settings:
-                //showHelp();
+
                 return true;
             default:
 
